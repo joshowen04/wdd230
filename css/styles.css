@@ -2,11 +2,9 @@
     --main-bg-color: rgb(60, 61, 133);
     --main-txt-color: rgb(238, 255, 244);
 }
-main{
-    font-family: sans-serif;
 
-}
 body{
+    font-family: sans-serif;
     max-width: 600px;
     margin:auto
 }
@@ -25,10 +23,12 @@ h1 {
     
     background-color: var(--main-bg-color);
     color:var(--main-txt-color);
-}
-.header-name {
     align-self: center;
     justify-self:center;
+}
+h2 {
+    padding:10px;
+    border-bottom:solid;
 }
 
 footer{
@@ -40,3 +40,14 @@ footer{
     padding: 1px;
     font-size: large;
 }
+
+ul{
+    padding-bottom:1em;
+    border-bottom:solid;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display:block;
+    }
+  }
