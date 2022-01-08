@@ -1,0 +1,42 @@
+:root {
+    --main-bg-color: rgb(60, 61, 133);
+    --main-txt-color: rgb(238, 255, 244);
+}
+main{
+    font-family: sans-serif;
+
+}
+body{
+    max-width: 600px;
+    margin:auto
+}
+img{
+    padding:1em;
+    border-radius: 25px;
+}
+header{
+    background-color: var(--main-bg-color);
+    display:grid;
+    grid-template-columns:auto 1fr;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px#cfcccc;
+}
+h1 {
+    
+    background-color: var(--main-bg-color);
+    color:var(--main-txt-color);
+}
+.header-name {
+    align-self: center;
+    justify-self:center;
+}
+
+footer{
+    background-color: var(--main-bg-color);
+    text-align:center;
+    color:var(--main-txt-color);
+    box-shadow: 10px 10px 5px#cfcccc;
+    border-radius: 25px;
+    padding: 1px;
+    font-size: large;
+}
