@@ -1,33 +1,51 @@
 @media only screen and (min-width: 37.5em) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   h1 {
     font-size: 3rem;
     align-self: center;
     justify-self: center;
+    border-radius: 10px 10px 0px 0px;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   footer {
     font-size: 1.5rem;
   }
 
-  img {
-    max-width: 100%;
+  section {
+    border-radius: 10px;
+    margin: 5px;
+    grid-template-rows: 100px 50px 50px auto auto;
   }
 
-  header {
+  main {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
-
   body {
-    max-width: 800px;
+    max-width: 600px;
   }
-
-  header,
+  header {
+    border-radius: 10px 10px 0px 0px;
+  }
   footer {
-    border-radius: 25px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  #quizlet {
+    grid-column: 1;
+  }
+  #repeticion {
+    grid-column: 2;
+  }
+  #contrast {
+    grid-row: 2;
+    grid-column: 1/3;
   }
 }

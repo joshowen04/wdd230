@@ -3,6 +3,7 @@
     font-size: 3rem;
     align-self: center;
     justify-self: center;
+    
   }
 
   h2 {
@@ -20,28 +21,18 @@
   header {
     display: grid;
     grid-template-columns: auto 1fr;
+    border-radius: 10px 10px 0px 0px;
   }
 
   body {
     max-width: 600px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
   }
 
-  header,
   footer {
-    border-radius: 25px;
+    border-radius: 0px 0px 10px 10px;
   }
   section {
     border-style: dotted;
   }
-  #quizlet {
 
-  }
-  #repeticion {
-
-  }
-  #contrast {
-
-  }
 }

@@ -1,9 +1,29 @@
-@media only screen and (min-width: 60em) {
-    section{
-        border-style:double;
-    }
-    body{
-        max-width:1000px;
-        grid-template-columns: 1fr 1fr;
-    }
+@media only screen and (min-width: 80em) {
+  body {
+    max-width: 600px;
   }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body {
+    max-width: 1200px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    border-style: solid;
+  }
+  #quizlet {
+    grid-column: 1;
+  }
+  #repeticion {
+    grid-column: 2;
+  }
+  #contrast {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}

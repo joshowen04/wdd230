@@ -1,7 +1,8 @@
 :root {
   --main-bg-color: rgb(60, 61, 133);
   --main-txt-color: rgb(238, 255, 244);
-  --h2-bg-color: rgb(47, 44, 221);
+  --h2-bg-color: rgb(31, 29, 141);
+  --p-bg-color:rgb(31, 29, 141);
 }
 
 /*
@@ -11,6 +12,10 @@ line-height
 */
 section {
   border-style: solid;
+  display: grid;
+  grid-template-rows: 60px 50px 50px auto auto;
+  box-shadow: 10px 10px 5px#cfcccc;
+  align-items: center;
 }
 body {
   margin: auto;
@@ -31,8 +36,8 @@ header {
   background-color: var(--main-bg-color);
   justify-content: center;
   box-shadow: 10px 10px 5px#cfcccc;
+  margin-bottom: 10px;
 }
-
 
 h1 {
   font-size: 1.5rem;
@@ -51,7 +56,8 @@ h2 {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Luxurious Roman", cursive;
 }
 
@@ -64,9 +70,26 @@ footer {
   padding: 1px;
   font-size: 1rem;
   text-shadow: 2px 2px 2px rgb(28, 29, 80);
+  margin-top: 10px;
 }
 
 ul {
   padding-bottom: 1em;
   border-bottom: solid;
+}
+p {
+  padding: 1rem;
+}
+
+h3 {
+  padding: 10px;
+}
+a {
+  padding: 10px;
+}
+
+section p{
+  background-color: var(--h2-bg-color);
+  color: var(--main-txt-color);
+  align-self: end;
 }
