@@ -1,0 +1,72 @@
+:root {
+  --main-bg-color: rgb(60, 61, 133);
+  --main-txt-color: rgb(238, 255, 244);
+  --h2-bg-color: rgb(47, 44, 221);
+}
+
+/*
+font-kerning
+letter-spacing
+line-height
+*/
+section {
+  border-style: solid;
+}
+body {
+  margin: auto;
+  font-family: "Orelega One", cursive;
+}
+
+img {
+  max-width: 80%;
+  padding: 1em;
+  border-radius: 25px;
+  filter: drop-shadow(2px 2px 2px rgb(28, 29, 80));
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: var(--main-bg-color);
+  justify-content: center;
+  box-shadow: 10px 10px 5px#cfcccc;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(28, 29, 80);
+  padding-left: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: var(--h2-bg-color);
+  color: var(--main-txt-color);
+}
+
+h1,
+h2 {
+  font-family: "Luxurious Roman", cursive;
+}
+
+footer {
+  background-color: var(--main-bg-color);
+  text-align: center;
+  color: var(--main-txt-color);
+  box-shadow: 10px 10px 5px#cfcccc;
+
+  padding: 1px;
+  font-size: 1rem;
+  text-shadow: 2px 2px 2px rgb(28, 29, 80);
+}
+
+ul {
+  padding-bottom: 1em;
+  border-bottom: solid;
+}
