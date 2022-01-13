@@ -11,6 +11,7 @@ letter-spacing
 line-height
 */
 section {
+  background-color: rgb(245, 240, 240);
   border-style: solid;
   display: grid;
   grid-template-rows: 60px 50px 50px auto auto;
@@ -52,7 +53,8 @@ h2 {
   font-size: 1rem;
   padding: 10px;
   background-color: var(--h2-bg-color);
-  color: var(--main-txt-color);
+  /*color: var(--main-txt-color);*/
+  color: rgb(245, 240, 240);
 }
 
 h1,
@@ -90,6 +92,6 @@ a {
 
 section p{
   background-color: var(--h2-bg-color);
-  color: var(--main-txt-color);
+  color: rgb(245, 240, 240);
   align-self: end;
 }
