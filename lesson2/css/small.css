@@ -95,3 +95,12 @@ section p{
   color: rgb(245, 240, 240);
   align-self: end;
 }
+nav{
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
+}
+a:visited{
+  color:white;
+}

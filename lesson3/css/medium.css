@@ -1,0 +1,25 @@
+@media only screen and (min-width: 37.5em) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    body {
+        max-width:1000px;
+    }
+    /* Horizontal Menu Examples */
+    /* Flex *********************/
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 auto;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+    .personas{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:10px;
+    }
+}
