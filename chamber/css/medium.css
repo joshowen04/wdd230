@@ -1,0 +1,15 @@
+@media only screen and (min-width: 37.5em) {
+  h1 {
+    font-size: 2rem;
+  }
+  body {
+    max-width: 1000px;
+  }
+  #join {
+    display: block;
+  }
+  #spotlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
