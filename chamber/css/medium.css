@@ -8,6 +8,18 @@
   #join {
     display: block;
   }
+  #join h2 {
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0.3);
+    background-color: var(--textfield-bg-color);
+    margin:5px;
+  }
+  #join p {
+    padding:10px;
+  }
+  #joinus{
+    font-size: 1.5rem;
+  }
   #spotlights {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -15,6 +15,13 @@ const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
+let day = now.getDay();
+
+if (day === 1 || day === 2) {
+	console.log(day)
+	let chamberMeetBanner = document.querySelector(".displayed")
+	chamberMeetBanner.classList.toggle("displayed")
+}
 // long, medium, short options ... try them
 
 currentDate.innerHTML = `<em>${fulldate}</em>`;

@@ -131,8 +131,22 @@ section{
   color: var(--main-txt-color);
   margin:.8em;
 }
+.weatherWidget{
+  max-width:95%;
+  margin:auto;
+}
+.spotlight_headers{
+  padding:.5em;
+  margin:.5em;
+}
 #spotlight3, #join{
   display:none;
+}
+#spotlight1 img, #spotlight2 img, #spotlight3 img, #events img{
+  max-width:95%;
+  margin: auto;
+  box-shadow: 0 2px 15px gray;
+  border-radius: 10px;;
 }
 #copywritebox{
   border-top: 2px solid #244fb3;
@@ -142,4 +156,27 @@ footer{
   display:flex;
   flex-direction: column;
   margin-top:.5em;
+}
+
+.displayed{
+  display:none;
+}
+
+#callToAction{
+  position:relative;
+}
+
+#joinus{
+  position:absolute;
+  font-size:2em;
+  bottom:50px;
+  right: 15px;
+  width: 8em;
+  border: 3px solid var(--textfield-bg-color);
+  background-color: var(--textfield-bg-color);
+  color:var(--main-txt-color);
+  box-shadow: 0 2px 15px gray;
+  border-radius: 10px;;
+  text-align: center;
+
 }
