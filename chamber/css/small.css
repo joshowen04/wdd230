@@ -165,7 +165,10 @@ footer{
 #callToAction{
   position:relative;
 }
-
+#heroimage{
+  position:relative;
+  
+}
 #joinus{
   position:absolute;
   font-size:2em;
