@@ -8,7 +8,7 @@
 }
 header div {
   display: grid;
-  grid-template-columns: 50px auto 40px 40px;
+  grid-template-columns: 50px auto 50px 50px;
 }
 h1 {
   font-size: 1.5rem;
@@ -144,9 +144,31 @@ section {
   color: var(--main-txt-color);
   margin: 0.8em;
 }
-.weatherWidget {
-  max-width: 95%;
-  margin: auto;
+.weatherDiv {
+  margin: 0;
+  padding:0;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:.5em;
+  align-content: center;
+  justify-content: center;
+}
+.weatherWidget{
+  margin:0;
+  padding:0;
+}
+.weatherDiv div{
+  align-self: center;
+} 
+.weatherIcon{
+  margin:0;
+  padding:0;
+  max-width:50px;
+}
+.currentSky{
+  margin: .2em 0 0;
+  padding:0;
 }
 .spotlight_headers {
   padding: 0.5em;
@@ -198,6 +220,24 @@ footer {
   position: relative;
 }
 
+#callToAction h2 {
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  background-color: transparent;
+  text-shadow: 2px 2px var(--textfield-bg-color);
+}
+
+figure {
+  padding:.25em;
+  margin:0;
+  align-content: center;
+  justify-content: center;
+}
+
+.lascondesimg {
+  border-radius: 5px;
+}
 #joinus {
   position: absolute;
   font-size: 2em;
@@ -210,12 +250,4 @@ footer {
   box-shadow: 0 2px 15px gray;
   border-radius: 10px;
   text-align: center;
-}
-
-#callToAction h2 {
-  position: absolute;
-  top: 10px;
-  left: 10%;
-  background-color: transparent;
-  text-shadow: 2px 2px var(--textfield-bg-color);
 }

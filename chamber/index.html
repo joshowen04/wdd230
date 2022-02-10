@@ -20,19 +20,24 @@
     <!--javascript-->
     <script defer src="js/dates.js"></script>
     <script defer src="js/scripts.js"></script>
-    <script src="js/weather.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/windchill.js"></script>
 </head>
 
 <body>
-    <div id="meetbanner" class="displayed"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+    <div id="meetbanner" class="displayed">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
     <header>
-        
+
         <div>
-            <img id="icon" src="images/rsz_2lcicon-full.png" alt="Las condes icon">
+            <img id="icon" src="images/rsz_2lcicon-full.webp" alt="Las condes icon">
             <h1>Las Condes Chamber Of Commerce</h1>
 
-            <a href="https://www.facebook.com/munilascondes/"><img class="socialicon" src="images/fbook.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com/company/municipalidad-de-las-condes"><img class="socialicon" src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/munilascondes/"><img class="socialicon" src="images/fbook.png"
+                    alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/municipalidad-de-las-condes"><img class="socialicon"
+                    src="images/linkedin.png" alt="LinkedIn"></a>
         </div>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -47,38 +52,83 @@
         <p id="currentDate"></p>
     </header>
     <main>
-        
+
         <section id="callToAction">
-            
+
             <div id="heroimage">
-            <h2>Welcome To Las Condes</h2>
-            <img src="images/rsz_las_condes_at_night.jpg" alt="Las condes at night">
-            <a id="joinus" href="#">Join Us!!</a>
+                <h2>Welcome To Las Condes</h2>
+                <!--<img src="images/rsz_las_condes_at_night.jpg" alt="Las condes at night">-->
+                <figure>
+                    <img class="lascondesimg" src="images/wdd230-org1100.jpg" alt="WDD 230" sizes=100vw srcset="images/wdd230-org200.jpg 200w,
+                    images/wdd230-org600.jpg 600w,
+                    images/wdd230-org800.jpg 800w,
+                    images/wdd230-org1100.jpg 1100w
+                    ">
+                </figure>
+                <a id="joinus" href="#">Join Us!!</a>
             </div>
         </section>
         <section id="events">
             <h2>Lolapalooza!</h2>
-            
-            <div><img src="images/rsz_pexels-vishnu-r-nair-1105666.jpg" alt="people-at-concert-1105666 by Vishnu R Niar"></div>
+
+            <div><img src="images/rsz_pexels-vishnu-r-nair-1105666.jpg"
+                    alt="people-at-concert-1105666 by Vishnu R Niar"></div>
             <h3>Coming this Friday to Parque Arauco</h3>
             <a href="https://www.lollapaloozacl.com/">Get more details</a>
         </section>
 
         <section id="weather">
             <h2>Weather for Today</h2>
-            <div class="weatherWidget" ></div>
+            <div class="weatherDiv">
+                <figure class="weatherWidget">
+                    <img class="weatherIcon" src="https://via.placeholder.com/50" alt="currentWeatherIcon">
+                    <figcaption class="currentSky"></figcaption>
+                </figure>
+                <div>
+                    Current:
+                    <div>
+                        <span class="currentTemp"></span>
+                        <span>&deg; F</span>
+                    </div>
+                </div>
+                <!-- <div>
+                    High:
+                    <div class="highTemp"></div>
+                </div>
+                <div>
+                    Low:
+                    <div class="lowTemp"></div>
+                </div> -->
+                <div>
+                    Windspeed:
+                    <div>
+                        <span class="windSpeed"></span>
+                        <span>MPH</span>
+                    </div>
+                </div>
+                <div>
+                    Wind Chill:
+                    <div>
+                        <span class="windChill"></span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="news">
             <h2>News Release</h2>
-            <p>Starting on the 15th of February, Less Water, More Awareness will be in effect. Get more information about your responsibilities and possible fines at: <a href="https://www.lascondes.cl/las-condes-verde/agua/agua.html">Less Water, More Awareness</a></p>
-            <p>Construction starting on Avenida Las Condes on 28 February to cost 1.2 million dollars and last until first quarter of 2023.</p>
+            <p>Starting on the 15th of February, Less Water, More Awareness will be in effect. Get more information
+                about your responsibilities and possible fines at: <a
+                    href="https://www.lascondes.cl/las-condes-verde/agua/agua.html">Less Water, More Awareness</a></p>
+            <p>Construction starting on Avenida Las Condes on 28 February to cost 1.2 million dollars and last until
+                first quarter of 2023.</p>
         </section>
 
         <section id="spotlights">
             <div id="spotlight1">
                 <h2 class="spotlight_headers">Discount at Dimeiggs</h2>
-                <a href="https://www.dimeiggs.cl"><img src="images/rsz_dimeiggs.jpg" alt="Photo of Dimeiggs discounts"></a>
+                <a href="https://www.dimeiggs.cl"><img src="images/rsz_dimeiggs.jpg"
+                        alt="Photo of Dimeiggs discounts"></a>
                 <a href="https://www.dimeiggs.cl">https://www.dimeiggs.cl</a>
                 <p>Av. las Condes 9146, Las Condes, Santiago</p>
             </div>
@@ -90,13 +140,16 @@
             </div>
             <div id="spotlight3">
                 <h2 class="spotlight_headers">Domus Tech</h2>
-                <a href="https://domustech.cl/"><img src="images/rsz_1domustech.png" alt="Domus Tech Instagram discount image"></a>
+                <a href="https://domustech.cl/"><img src="images/rsz_1domustech.png"
+                        alt="Domus Tech Instagram discount image"></a>
                 <a href="https://domustech.cl/">https://domustech.cl/</a>
                 <p>Av. Pedro de Valdivia 0193, Of. 71, Providencia</p>
             </div>
         </section>
         <section id="join">
-            <a href="#"><h2>Join Us!</h2></a>
+            <a href="#">
+                <h2>Join Us!</h2>
+            </a>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization.</p>
         </section>
 
@@ -116,7 +169,7 @@
             <div>
                 <img src="images/whatsapp.png" alt="WhatsApp">
                 <a href="https://wa.me/+5698896548">+5698896548</a>
-                
+
             </div>
             <div>
                 <a href="https://goo.gl/maps/ScbF1Ae3rLDSfGGR9"><img src="images/mappin.png"
