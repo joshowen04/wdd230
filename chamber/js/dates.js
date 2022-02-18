@@ -26,3 +26,18 @@ if (day === 1 || day === 2) {
 
 currentDate.innerHTML = `<em>${fulldate}</em>`;
 
+const sinceLast = document.querySelector("#sinceLast");
+
+let currentVisit = Number(Date.now())
+let lastVisit = window.localStorage.getItem("lastVisit")
+let difference = Math.round((currentVisit - lastVisit) / (1000*60*60*24))
+
+/*console.log(`${currentVisit} - ${lastVisit} - ${difference}`);*/
+localStorage.setItem("lastVisit", currentVisit);
+
+if (difference < 1) {
+	sinceLast.textContent = "It has been less than a day since you last visited.";
+}
+else {
+	sinceLast.textContent = `Days since last visit: ${difference}`
+}

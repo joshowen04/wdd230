@@ -30,9 +30,16 @@ div,
 li {
   font-family: "Source Sans Pro", sans-serif;
 }
-main img {
+.home_main img {
   width: 100%;
 }
+.discover_main img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px var(--accent-color3);
+}
+
+
 body {
   background-color: var(--bg-color);
   max-width: 600px;
@@ -122,14 +129,17 @@ nav ul.open {
   display: block;
 }
 
-main {
+main,
+.home_main {
   display: grid;
   row-gap: 0.3rem;
   column-gap: 0.3rem;
   margin: 2px;
 }
 
-section {
+section, .discover_main h2, figure{
+  margin:.25em;
+  padding:.25em;
   background-color: var(--accent-color2);
   border: 1px solid rgba(0, 0, 0.3);
   color: var(--main-txt-color);
@@ -146,29 +156,29 @@ section {
 }
 .weatherDiv {
   margin: 0;
-  padding:0;
-  display:grid;
+  padding: 0;
+  display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap:.5em;
+  grid-gap: 0.5em;
   align-content: center;
   justify-content: center;
 }
-.weatherWidget{
-  margin:0;
-  padding:0;
+.weatherWidget {
+  margin: 0;
+  padding: 0;
 }
-.weatherDiv div{
+.weatherDiv div {
   align-self: center;
-} 
-.weatherIcon{
-  margin:0;
-  padding:0;
-  max-width:50px;
 }
-.currentSky{
-  margin: .2em 0 0;
-  padding:0;
+.weatherIcon {
+  margin: 0;
+  padding: 0;
+  max-width: 50px;
+}
+.currentSky {
+  margin: 0.2em 0 0;
+  padding: 0;
 }
 .spotlight_headers {
   padding: 0.5em;
@@ -201,17 +211,17 @@ footer {
   display: none;
 }
 #meetbanner {
-  text-align:center;
+  text-align: center;
   margin-top: 1em;
-  margin-bottom:.5em;
+  margin-bottom: 0.5em;
   box-shadow: 0 5px 15px gray;
   border-radius: 10px;
   background-color: var(--accent-color2);
   color: var(--main-txt-color);
   font-size: 1.5rem;
 }
-#meetbanner p{
-  padding: .5em;
+#meetbanner p {
+  padding: 0.5em;
 }
 #callToAction {
   position: relative;
@@ -228,12 +238,6 @@ footer {
   text-shadow: 2px 2px var(--textfield-bg-color);
 }
 
-figure {
-  padding:.25em;
-  margin:0;
-  align-content: center;
-  justify-content: center;
-}
 
 .lascondesimg {
   border-radius: 5px;
@@ -250,4 +254,43 @@ figure {
   box-shadow: 0 2px 15px gray;
   border-radius: 10px;
   text-align: center;
+}
+
+.text section {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.image_sidebar {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+  align-items: center;
+  padding: 0.5em;
+}
+.image_sidebar img[data-src] {
+  filter: blur(0.2em);
+}
+
+.image_sidebar img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+
+figcaption{
+  text-align: center;
+}
+figcaption p {
+  margin:0;
+}
+.discover_main {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.factsText ul li{
+  text-align: left;
+}
+
+.image_sidebar h2 {
+  margin-top: -10px;
 }
