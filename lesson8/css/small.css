@@ -13,7 +13,7 @@ body {
   max-width: 600px;
   margin: auto;
 
-  font-family: "Orelega One", cursive;
+  
 }
 
 img {
@@ -26,6 +26,7 @@ img {
 }
 
 header {
+  font-family: "Orelega One", cursive;
   background-color: var(--main-bg-color);
   justify-content: center;
   box-shadow: 10px 10px 5px#cfcccc;
@@ -53,6 +54,7 @@ h2 {
 }
 
 footer {
+  font-family: "Orelega One", cursive;
   background-color: var(--main-bg-color);
   text-align: center;
   color: var(--main-txt-color);
@@ -69,12 +71,13 @@ ul {
 }
 
 table {
+  font-family: "Unix", sans-serif;
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  /*font-size: 0.8rem;*/
   width: 100%;
-}
+} 
 
 td, th {
   border: 1px solid rgb(190,190,190);
@@ -110,6 +113,7 @@ tfoot {
 thead {
   background-color: rgb(77, 170, 224);
   color: white;
+  font-size: 1.2em;
 }
 
 #overall_head {
