@@ -41,3 +41,4 @@ if (difference < 1) {
 else {
 	sinceLast.textContent = `Days since last visit: ${difference}`
 }
+
