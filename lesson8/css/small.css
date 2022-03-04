@@ -50,11 +50,11 @@ h2 {
 
 h1,
 h2 {
-  font-family: "Luxurious Roman", cursive;
+  font-family: "Ubuntu", sans-serif;
 }
 
 footer {
-  font-family: "Orelega One", cursive;
+  font-family: "Ubuntu", sans-serif;
   background-color: var(--main-bg-color);
   text-align: center;
   color: var(--main-txt-color);
@@ -71,7 +71,7 @@ ul {
 }
 
 table {
-  font-family: "Unix", sans-serif;
+  font-family:  "Ubuntu", sans-serif;
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
