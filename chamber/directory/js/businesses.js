@@ -28,7 +28,19 @@ function displaybusinesses(businesses) {
     logo.setAttribute("alt",`logo of ${name}`);
     logo.setAttribute("loading", "lazy");
 
+    //setup the text
+    let addressLine = document.createElement("p")
+    addressLine.innerHTML = address;
+    let phoneLine = document.createElement("p")
+    phoneLine.innerHTML = phone;
+    let urlLine = document.createElement("p")
+    urlLine.innerHTML = url;
+
+
     card.appendChild(logo);
+    card.appendChild(addressLine);
+    card.appendChild(phoneLine);
+    card.appendChild(urlLine);
     cards.appendChild(card);
 
 }
