@@ -6,7 +6,6 @@
   --accent-color2: #247ba0;
   --accent-color3: #605f5e;
 }
-
 header div {
   display: grid;
   grid-template-columns: 50px auto 50px 50px;
@@ -432,4 +431,30 @@ input[type="radio"] {
 .thankyou_main p{
   padding:2%;
   text-align: center;
+}
+
+.logos {
+  padding:.5em;
+  margin:0;
+}
+
+.logoslist {
+  display:none;
+}
+
+.cards a {
+  font-size: .8em;
+}
+
+.viewButtons{
+  margin:auto;
+}
+
+.changeView:hover {
+  /*padding:.25em;*/
+  background-color:rgba(0, 0, 0, 0.1);
+
+}
+.businessName {
+  display:none;
 }

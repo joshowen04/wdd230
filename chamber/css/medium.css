@@ -5,7 +5,10 @@
   body {
     max-width: 1000px;
   }
-
+  .discover-body, .home-body, .joinus-body{
+    max-width: 1200px;
+    margin:auto;
+  }
   #join {
     display: block;
   }
@@ -74,4 +77,18 @@
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr 10px;
   }
+  .logos {
+    display:inline;
+
+  }
+  .cards section{
+    justify-content: center;
+  }
+
+  .cards {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
 }
