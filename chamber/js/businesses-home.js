@@ -48,16 +48,15 @@ function displaybusinesses(businesses) {
         let url = businesses.url;
         let logosource = businesses.logoname;
         //setup html
-        let card = document.createElement("figure");
+        let card = document.createElement("div");
         //create the image
         let logo = document.createElement("img");
         logo.setAttribute("src", `directory/images/${logosource}`);
         logo.setAttribute("alt", `logo of ${name}`);
         logo.setAttribute("loading", "lazy");
         //setup the text
-        let nameLine = document.createElement("p");
+        let nameLine = document.createElement("h2");
         nameLine.innerHTML = name;
-        nameLine.classList.add("businessName");
         let addressLine = document.createElement("p");
         addressLine.innerHTML = address;
         let phoneLine = document.createElement("p");
