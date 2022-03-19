@@ -18,7 +18,7 @@
       "telephone": "+56968992980",
       "url": "https://e-business.cl/",
       "logoname": "LOGO_EBUSINESS_IMG-02-150.webp",
-      "membership" : "gold"
+      "membership" : "silver"
     }, 
     {
       "name": "Grabado de Patentes",
@@ -28,7 +28,7 @@
       "telephone": "+56968992980",
       "url": "https://grabadodepatentes.cl/",
       "logoname": "patentes-bklanco-150.png",
-      "membership" : "gold"
+      "membership" : "non-profit"
     }, 
     {
       "name": "Dojo Sensei Abdon",
@@ -48,7 +48,7 @@
       "telephone": "+56968992980",
       "url": "https://www.achilles.com/",
       "logoname": "achilles.webp",
-      "membership" : "gold"
+      "membership" : "silver"
     }, 
     {
       "name": "SRP AUTOMOTRIZ 2",
@@ -58,7 +58,7 @@
       "telephone": "+56968992980",
       "url": "https://www.srpautomotriz.com/",
       "logoname": "SRP.webp",
-      "membership" : "gold"
+      "membership" : "non-profit"
     }, 
     {
       "name": "SOFTCargo Software Solutions",
@@ -78,7 +78,7 @@
       "telephone": "+56968992980",
       "url": "http://blahdy.cl",
       "logoname": "altolascondes-logo.png",
-      "membership" : "gold"
+      "membership" : "silver"
     }, 
     {
       "name": "Inpras",
@@ -88,7 +88,7 @@
       "telephone": "+56968992980",
       "url": "https://inpras.cl/",
       "logoname": "inpras.png",
-      "membership" : "gold"
+      "membership" : "non-profit"
     }, 
     {
       "name": "Euroinnova",
@@ -108,7 +108,7 @@
       "telephone": "+56968992980",
       "url": "http://www.americaconsultores.cl/",
       "logoname": "americaconsultores.png",
-      "membership" : "gold"
+      "membership" : "silver"
     }, 
     {
       "name": "Dentons",
@@ -118,7 +118,7 @@
       "telephone": "+56968992980",
       "url": "https://www.dentons.com/en/",
       "logoname": "dentons.png",
-      "membership" : "gold"
+      "membership" : "non-profit"
     }
   ]
 }
