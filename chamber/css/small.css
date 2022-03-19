@@ -469,3 +469,31 @@ input[type="radio"] {
 .businessName {
   display:none;
 }
+
+#contactInformation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactInformation div img {
+  max-width:95%;
+}
+#contactUs form fieldset label{
+  color:white;
+  text-align: left;
+}
+#contactUs form fieldset textarea{
+  background-color: var(--bg-color);
+}
+
+#contactUs input.submitBtn {
+  border: none;
+  background-color: var(--accent-color1);
+  color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 1% 1% 2rem 1%;
+  width: 98%;
+  /*max-width: 20rem;*/
+}

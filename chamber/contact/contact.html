@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Las Condes Chamber of Commerce | About Us</title>
+    <title>Las Condes Chamber of Commerce | Home</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.ico">
     <!--Fonts-->
@@ -17,19 +17,20 @@
     <link rel="stylesheet" href="../css/small.css" />
     <link rel="stylesheet" href="../css/medium.css" />
     <link rel="stylesheet" href="../css/large.css" />
-
     <!--javascript-->
     <script defer src="../js/dates.js"></script>
     <script defer src="../js/scripts.js"></script>
-    <!--<script defer src="js/lazyloading.js"></script>-->
-    <script defer src="js/businesses.js"></script>
+    <script defer src="../js/weather.js"></script>
+    <script defer src="../js/windchill.js"></script>
+    <script defer src="../js/businesses-home.js"></script>
 </head>
 
-<body class="discover-body">
+<body class="home-body">
     <div id="meetbanner" class="displayed">
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
     <header>
+
         <div>
             <img id="icon" src="../images/rsz_2lcicon-full.webp" alt="Las condes icon">
             <h1>Las Condes Chamber Of Commerce</h1>
@@ -45,19 +46,46 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../discover/discover.html">About Us</a></li>
                 <li><a href="../join/join.html">Join Us</a></li>
-                <li class="active"><a href="#">Directory</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../directory/directory.html">Directory</a></li>
+                <li class="active"><a href="contact/contact.html">Contact</a></li>
             </ul>
         </nav>
         <p id="currentDate"></p>
     </header>
-    <h2>Business Directory</h2>
-    <main class="directory_main">
-        <div class="viewButtons">
-            <img class="changeView" id="listButton" src="images/create-list-button_icon-icons.com_54025.png" alt="create list icon">
-            <img class="changeView" id="tilesButton" src="images/create-tile-button.png" alt="create tiles icon">
-        </div>
-        <div class="cards"></div>
+    <main class="contact_main">
+
+        <section id="contactInformation">
+            <div>
+                <h2>Contact Information</h2>
+                <img src="../images/lascondesdark.png" alt="Las Condes Dark background">
+                <p>Office Address: Avenida Vitacure 2939, Las Condes</p>
+                <p>Office Telephone: +56 2 2 756 984</p>
+                <p>Office Hours: Monday - Friday : 9:00 AM - 3:00 PM </p>
+            </div>
+        </section>
+        <section id="contactUs">
+            <form method="get" action="thankyou.html">
+                <h2>Applicant Information</h2>
+                <fieldset>
+                    <label class="top">First Name* <input type="text" name="fname" required pattern="[A-Za-z]+"></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required pattern="[A-Za-z]+"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label class="top">How can we help you?<textarea name="businessDescription"
+                            placeholder="How can we help you?"></textarea></label>
+                    <input type="hidden" id="date" name="date">
+
+
+
+                </fieldset>
+                <input type="submit" value="Send Email" class="submitBtn">
+            </form>
+        </section>
+
+
+
+
+
     </main>
     <footer>
         <div id="footerIcon">
