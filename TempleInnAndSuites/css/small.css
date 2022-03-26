@@ -1,0 +1,140 @@
+:root {
+  --backgroundYellow: #e7d24d;
+  --textDarkBlue: #001294;
+  --textLightBlue: #5e7ce2;
+  --accentColor1: #cfccd6;
+  --accentColor2: #6a2e35;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DM Serif Text", serif;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--accentColor1);
+  max-width: 600px;
+  margin: auto;
+}
+
+header {
+  background-color: var(--backgroundYellow);
+  display: grid;
+  grid-template-rows: 160px 60px 1fr 5.5em 2em;
+  justify-items: center;
+}
+/* set up positions for each div element in the header*/
+#iconDiv {
+  grid-row: 1;
+  grid-column: 1;
+}
+#headerFbook {
+  grid-row: 2;
+}
+#headerLinkedin {
+  grid-row: 2;
+}
+#navDiv {
+  grid-row: 3;
+  width:100%;
+}
+#headingDiv {
+    grid-row: 4;
+  }
+#dateDiv {
+  grid-row: 5;
+}
+#hamburgerBtn {
+  margin: 0.2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  grid-row: 1;
+}
+
+/* display the hamburger or x */
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+/*default the nav to hidden*/
+header nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#primaryNav {
+  display: none;
+}
+#primaryNav.open {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--backgroundYellow);
+}
+#primaryNav li {
+    margin: 0.2rem 2vw;
+}
+header h1 {
+  text-align: center;
+  color: var(--textDarkBlue);
+}
+#primaryNav li a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    /*transition: 0.5s;*/
+  }
+
+#currentDate {
+  text-align: center;
+  margin: 0;
+  color: var(--accentColor2)
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--textLightBlue);
+  font-weight: bold;
+}
+nav ul li.active a {
+  background-color: rgba(81, 80, 139, 0.4);
+  color: var(--accentColor2);
+  border-radius: 2px;
+}
+
+nav a:hover, #hamburgerBtn:hover{
+  background-color: var(--textDarkBlue);
+  color: var(--backgroundYellow);
+  font-weight: bold;
+  
+}
+#availableTemples img{
+  max-width:300px;
+}
+
+.templeCard{
+  border-style:solid;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}

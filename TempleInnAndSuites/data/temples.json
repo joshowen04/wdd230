@@ -1,0 +1,93 @@
+[
+    {
+        "templeName": "Bountiful Utah Temple",
+        "location": "Bountiful, Utah, United States",
+        "dedicated": "8 January 1995",
+        "imageUrl": "https://assets.ldscdn.org/b3/1f/b31f8fc3892ce063cfbd0607cd53980290fcc0ae/aba_nigeria_temple_lds.jpeg",
+        "lat":"40.8829604",
+        "lon":"-111.8489772",
+        "address": "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
+        "number":"(1) 801-296-2100",
+        "services":"Clothing rental available / No cafeteria available / No patron housing available / Distribution center nearby",
+        "ordinance":"https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+        "closure":"Saturday, 2 April 2022 / Monday, 4 April 2022 - Monday, 18 April 2022 / Saturday, 2 July 2022 / Saturday, 23 July 2022 / Monday, 19 September 2022 - Monday, 3 October 2022 / Wednesday, 23 November 2022 - Thursday, 24 November 2022 / Friday, 23 December 2022 - Saturday, 24 December 2022 / Saturday, 31 December 2022"
+    },
+    {
+        "templeName": "Provo City Center Temple",
+        "location": "Provo, Utah, United States",
+        "dedicated": "20 March 2016",
+        "imageUrl": "https://assets.ldscdn.org/57/18/5718c8b9c5a103646c0bd22554cb268b88986f05/provo_city_center_temple_exterior.jpg",
+        "lat":"40.232676",
+        "lon":"-111.661505",
+        "address": "50 South University Ave Provo UT 84601 United States",
+        "number":"(1) 801-343-2700",
+        "services":"Clothing rental available / No cafeteria available / No patron housing available / Distribution center nearby",
+        "ordinance":"https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+        "closure":"Saturday, 2 April 2022 / Monday, 20 June 2022 - Monday, 4 July 2022 / Saturday, 1 October 2022 / Wednesday, 23 November 2022 (Limited Operations) / Thursday, 24 November 2022 / Monday, 28 November 2022 - Monday, 12 December 2022 / Saturday, 24 December 2022 / Saturday, 31 December 2022"
+    },
+    {
+        "templeName": "Salt Lake Temple",
+        "location": "Salt Lake City, Utah, United States",
+        "dedicated": "Renovation",
+        "imageUrl": "https://assets.ldscdn.org/cc/dc/ccdce513b921520a0740a60b5f349759a269eceb142197/salt_lake_temple_lds.jpeg",
+        "lat":"40.7704462",
+        "lon":"-111.8941115",
+        "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
+        "number":"",
+        "services":"",
+        "ordinance":"",
+        "closure":"Currently Closed"
+    },
+    {
+        "templeName": "St. Louis Missouri Temple",
+        "location": "St. Louis, Missouri, Unitied States",
+        "dedicated": "1 June 1997",
+        "imageUrl": "https://assets.ldscdn.org/aa/08/aa083372753647155b1bf1aaeb46145cf0ffe26a/st_louis_temple_lds.jpeg",
+        "lat":"38.6395816",
+        "lon":"-90.4671195",
+        "address": "12555 N Outer Forty Dr St. Louis MO 63141-8620, United States",
+        "number":"(1) 314-514-1122",
+        "services":"Clothing rental available / No cafeteria available / No patron housing available / Distribution center nearby",
+        "ordinance":"https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+        "closure":"Monday, 21 March 2022 - Monday, 4 April 2022 / Monday, 29 August 2022 - Monday, 5 December 2022 / Saturday, 24 December 2022 / Saturday, 31 December 2022"
+    },
+    {
+        "templeName": "Trujillo Peru Temple",
+        "location": "Trujillo, Peru",
+        "dedicated": "21 June 2015",
+        "imageUrl": "https://assets.ldscdn.org/98/e0/98e05cb168f7720698c8dd2dcf171754e4676f4f/trujillo_peru_temple_exterior.jpg",
+        "lat":"-8.100184",
+        "lon":"-79.0608087",
+        "address": "Av. Mansiche Km 3.5 Carretera hacia Huanchaco Huanchaco, Trujillo, La Libertad, Peru",
+        "number":"(51) 44-602-130",
+        "services":"No clothing rental available / No cafeteria available / No patron housing available / Distribution center nearby",
+        "ordinance":"https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+        "closure":"Monday, 28 March 2022 - Monday, 6 June 2022 / Thursday, 28 July 2022 - Friday, 29 July 2022 / Saturday, 1 October 2022 / Saturday, 24 December 2022 / Saturday, 31 December 2022"
+    },
+    {
+        "templeName": "Santiago Chile Temple",
+        "location": "Santiago Chile",
+        "dedicated": "12 March 2006",
+        "imageUrl": "https://assets.ldscdn.org/37/b2/37b2afce3517343c6813da32ffc13231fcdfae14/santiago_chile_lds_temple.jpeg",
+        "lat":"-33.4441159",
+        "lon":"-70.6085925",
+        "address": "Pocuro #1940 Providencia 6641404 Santiago Region Metropolitana (Santiago), Chile",
+        "number":"(56) 22-340-5070",
+        "services":"No clothing rental available / No cafeteria available / No patron housing available / Distribution center nearby",
+        "ordinance":"https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+        "closure":"Saturday, 2 April 2022 / Saturday, 21 May 2022 / Monday, 1 August 2022 - Monday, 29 August 2022 / Saturday, 17 September 2022 / Saturday, 1 October 2022 / Saturday, 24 December 2022 / Saturday, 31 December 2022"
+    },
+    {
+        "templeName": "London England Temple",
+        "location": "London England, UK",
+        "dedicated": "18 October 1992",
+        "imageUrl": "https://assets.ldscdn.org/42/cd/42cdbcfdaf9f17dc3b2587acea8cf0f44152e623/london_england_temple_lds.jpeg",
+        "lat":"51.1629688",
+        "lon":"-0.0551739",
+        "address": "West Park Road Newchapel Surrey, England RH7 6HW, United Kingdom",
+        "number":"(44) 1342 831-400",
+        "services":"Clothing rental available / No cafeteria available / Patron housing available / Distribution center nearby",
+        "ordinance":"https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+        "closure":"Monday, 7 March 2022 - Monday, 11 April 2022 / Thursday, 2 June 2022 - Friday, 3 June 2022 / Monday, 19 September 2022 - Monday, 3 October 2022"
+    }
+]
