@@ -128,13 +128,102 @@ nav a:hover, #hamburgerBtn:hover{
   
 }
 #availableTemples img{
-  max-width:300px;
+  max-width:100%;
+  
+}
+
+
+
+#availableTemples{
+  /*max-width: 90vw;
+  position: relative;*/
+  max-width:90%;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.mySlides {
+  display: none;
+}
+
+.templeCards{
+  max-width: 80%;
+  position: relative;
+  margin: auto;
 }
 
 .templeCard{
   border-style:solid;
-  display:flex;
+  /*display:flex;*/
   flex-direction: column;
   align-items: center;
-  
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.navigationBar{
+  height:2em;
+  /*border-style: solid;*/
+  /*width:350px;*/
+}
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin: 15px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.weatherinfo{
+  display:grid;
+  grid-template-rows: auto;
+  margin-top:10px;
+}
+
+.weatherForecast{
+  margin-top:-10px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding:0;
+}
+.weatherForecast h4{
+  margin-bottom:-10px;
 }
