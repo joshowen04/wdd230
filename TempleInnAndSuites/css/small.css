@@ -17,23 +17,26 @@ body {
   background-color: var(--accentColor1);
   max-width: 600px;
   margin: auto;
+  color: var(--textDarkBlue);
 }
-
-header {
+header, footer{
   background-color: var(--backgroundYellow);
+  justify-items: center;
+}
+header{
   display: grid;
   grid-template-rows: 160px 60px 1fr 5.5em 2em;
-  justify-items: center;
+
 }
 /* set up positions for each div element in the header*/
 #iconDiv {
   grid-row: 1;
   grid-column: 1;
 }
-#headerFbook {
+.headerFbook {
   grid-row: 2;
 }
-#headerLinkedin {
+.headerLinkedin {
   grid-row: 2;
 }
 #navDiv {
@@ -78,6 +81,7 @@ header nav {
 }
 #primaryNav {
   display: none;
+  font-size: larger;
 }
 #primaryNav.open {
   display: block;
@@ -137,7 +141,7 @@ nav a:hover, #hamburgerBtn:hover{
 #availableTemples{
   /*max-width: 90vw;
   position: relative;*/
-  max-width:90%;
+  /*max-width:90%;*/
   margin: auto;
   display:flex;
   flex-direction: column;
@@ -180,7 +184,7 @@ nav a:hover, #hamburgerBtn:hover{
 
 
 
-.navigationBar{
+#navigationBar{
   height:2em;
   /*border-style: solid;*/
   /*width:350px;*/
@@ -230,4 +234,75 @@ nav a:hover, #hamburgerBtn:hover{
 }
 .weatherForecast h4{
   margin-bottom:-10px;
+}
+
+
+
+#homeMain img{
+  max-width: 100%;
+}
+
+#reservation{
+  position:relative;
+}
+#reservationHeader{
+  color:white;
+  position:absolute;
+  top:10%;
+  left:20px;
+  text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+ 1px -1px 0 #000,
+-1px -1px 0 #000;
+}
+
+Button{
+  font-family : inherit;
+  color:var(--accentColor2);
+  background-color: var(--backgroundYellow);
+  padding:.5em;
+  border-radius: 30px;
+  border-width: 3px;
+  border-color: var(--textDarkBlue);
+  font-style: bold;
+}
+
+#reservationButton{
+  position:absolute;
+  bottom:10%;
+  right: 20px;
+
+  
+}
+
+#services{
+  margin:10px;
+  text-align: center;
+  font-size: larger;
+}
+
+.footerIcon{
+  display:none;
+}
+.directionDiv, .contactUsDiv{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+}
+.socialDiv{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  margin-top:10px;
+
+}
+footer{
+  display:flex;
+  flex-direction: column;
+
+}
+
+.contactUsDiv p, .directionDiv p{
+  margin:0;
 }

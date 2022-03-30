@@ -29,7 +29,7 @@
 <body>
     <header>
         <div id="iconDiv">
-            <img id="icon" src="images/logoBG-150.png" alt="Temple Inn and Suites logo">
+            <img class="icon" id="headerIcon" src="images/logoBG-150.png" alt="Temple Inn and Suites logo">
         </div>
         <div id="navDiv">
             <nav>
@@ -42,10 +42,10 @@
                 </ul>
             </nav>
         </div>
-        <div id="socialDiv">
-            <a href="https://www.facebook.com/"><img class="socialicon" id="headerFbook" src="images/fbook.png"
+        <div class="socialDiv">
+            <a href="https://www.facebook.com/"><img class="socialicon headerFbook" src="images/fbook.png"
                     alt="Facebook"></a>
-            <a href="https://www.linkedin.com"><img class="socialicon" id="headerLinkedin" src="images/linkedin.png"
+            <a href="https://www.linkedin.com"><img class="socialicon headerLinkedin" src="images/linkedin.png"
                     alt="LinkedIn"></a>
         </div>
         <div id="headingDiv">
@@ -55,16 +55,22 @@
             <p id="currentDate">Current Date</p>
         </div>
     </header>
-    <main>
+    <main id="homeMain">
 
         <section id="services">
             <h2>Making Your Stay Effortless so you can Ejoy why You're Really Here.</h2>
             <p>Our long list of services and economical prices make it easy for you to visit the temple.</p>
-            <button>Our Services</button>
+            <button id="servicesButton">Our Services</button>
         </section>
         <section id="reservation">
-            <h2>Make a Reservation Today!</h2>
-            <img src="" alt="reservation photo">
+            <h2 id="reservationHeader">Make a Reservation Today!</h2>
+            <img id="reservationImage" src="pexels-andrea-piacquadio-large.jpg"
+                alt="Photo by Andrea Piacquadio: https://www.pexels.com/photo/reception-desk-with-antique-hotel-bell-small.jpg/"
+                sizes="100vw" srcset="images/pexels-andrea-piacquadio-small.jpg 200w,
+                    images/pexels-andrea-piacquadio-medium.jpg 600w,
+                    images/pexels-andrea-piacquadio-large.jpg 800w
+                    ">
+            <button id="reservationButton">Make your Reservation</button>
         </section>
         <section id="availableTemples">
             <h2>Temples Where we can be Found.</h2>
@@ -73,7 +79,7 @@
                 <!--from w3schools slideshow example-->
 
             </section>
-            <div class="navigationBar">
+            <div id="navigationBar">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
@@ -81,15 +87,23 @@
     </main>
 
     <footer>
-        <div id="iconDiv">
-            <img id="icon" src="images/logoBG-150.png" alt="Temple Inn and Suites logo">
+        <div>
+            <img class="icon footerIcon" src="images/logoBG-150.png" alt="Temple Inn and Suites logo">
         </div>
-
-
-        <div id="socialDiv">
-            <a href="https://www.facebook.com/"><img class="socialicon" id="headerFbook" src="images/fbook.png"
+        <div class="directionDiv">
+            <h4>Our Office:</h4>
+            <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <a href="https://goo.gl/maps/f4tx3ZR48zST8Tw16"><img src="images/mappin.png" alt="map link"></a>
+        </div>
+        <div class="contactUsDiv">
+            <h4>Contact US:</h4>
+            <p>Phone: 1 (240) 555 1234 </p>
+            <p>Email: contact@templeinn.com</p>
+        </div>
+        <div class="socialDiv" >
+            <a href="https://www.facebook.com/"><img class="footerFbook" src="images/fbook.png"
                     alt="Facebook"></a>
-            <a href="https://www.linkedin.com"><img class="socialicon" id="headerLinkedin" src="images/linkedin.png"
+            <a href="https://www.linkedin.com"><img class="footerLinkedin" src="images/linkedin.png"
                     alt="LinkedIn"></a>
         </div>
 

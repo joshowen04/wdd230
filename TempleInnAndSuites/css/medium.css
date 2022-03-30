@@ -1,5 +1,31 @@
 @media only screen and (min-width: 37.5em) {
-    body{
-        max-width: 100%;
-    }
+  body {
+    max-width: 100%;
+  }
+  #reservationHeader {
+    font-size: 3em;
+  }
+  Button {
+    font-size: 1.5em;
+  }
+  #services{
+    margin:10px;
+    text-align: left;
+    font-size: larger;
+  }
+  
+  .footerIcon{
+    display:block;
+  }
+  footer{
+    display:grid;
+    grid-template-columns: 170px 1fr 1fr 75px;
+    padding:10px;
+
+}
+footer .socialDiv{
+    display:flex;
+    flex-direction: column;
+}
+
 }

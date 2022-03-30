@@ -1,4 +1,5 @@
-const requestURL = "https://joshowen04.github.io/wdd230/TempleInnAndSuites/data/temples.json";
+const requestURL =
+  "https://joshowen04.github.io/wdd230/TempleInnAndSuites/data/temples.json";
 let slideIndex = 1;
 
 const templeparent = document.querySelector(".templeCards");
@@ -15,13 +16,11 @@ const output = (temples) => {
     templeName.innerText = temples.templeName;
     console.log(temples.templeName);
     templeName.classList.add("text");
-    
-    
-    
+
     card.appendChild(templeName);
 
-//    let location = document.createElement("h4");
-//    location.innerText = temples.location;
+    //    let location = document.createElement("h4");
+    //    location.innerText = temples.location;
     // let dedicated = document.createElement("h4");
     // dedicated.innerText = temples.dedicated;
     // card.appendChild(dedicated);
@@ -30,78 +29,81 @@ const output = (temples) => {
     imageUrl.alt = temples.templeName;
     card.appendChild(imageUrl);
     //card.appendChild(location);
-    let lat = temples.lat
-    let lon = temples.lon
-    fetch(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=46987a429fccce36bf013c9455dc421d`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        weather = data;
-  
-        console.log(weather)
-        let weatherinfo = document.createElement("div");
-        
-        /* Current Temp */
-        let temp = weather.current.temp;
-        let conditions = weather.current.weather[0].main;
-        let conDesc = weather.current.weather[0].description;
-        let humidity = weather.current.humidity;
-        let icon = `https://openweathermap.org/img/w/${weather.current.weather[0].icon}.png`;
+    let lat = temples.lat;
+    let lon = temples.lon;
+    // fetch(
+    //   `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&units=imperial&appid=46987a429fccce36bf013c9455dc421d`
+    // )
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     weather = data;
+    //     let alerts = weather.alerts;
+    //     if (alerts) {
+    //       alert(`${alerts.event} advisory for ${temples.location}\n${alerts.description} `);
+    //     }
+    //     console.log(weather);
+    //     let weatherinfo = document.createElement("div");
 
-        /*future dates */
+    //     /* Current Temp */
+    //     let temp = weather.current.temp;
+    //     let conditions = weather.current.weather[0].main;
+    //     let conDesc = weather.current.weather[0].description;
+    //     let humidity = weather.current.humidity;
+    //     let icon = `https://openweathermap.org/img/w/${weather.current.weather[0].icon}.png`;
 
-        let one = parseInt(`${weather.daily[1].dt}000`)
-        let oneFullDate= new Date(one);
-      
-        let oneRefinedDate = `${oneFullDate.getDate()}/${oneFullDate.getMonth()+1}/${oneFullDate.getFullYear()}`
+    //     /*future dates */
 
-        let two = parseInt(`${weather.daily[2].dt}000`)
-        let twoFullDate= new Date(two);
-      
-        let twoRefinedDate = `${twoFullDate.getDate()}/${twoFullDate.getMonth()+1}/${twoFullDate.getFullYear()}`
+    //     let one = parseInt(`${weather.daily[1].dt}000`);
+    //     let oneFullDate = new Date(one);
 
-        let three = parseInt(`${weather.daily[3].dt}000`)
-        let threeFullDate= new Date(three);
-      
-        let threeRefinedDate = `${threeFullDate.getDate()}/${threeFullDate.getMonth()+1}/${threeFullDate.getFullYear()}`
+    //     let oneRefinedDate = `${oneFullDate.getDate()}/${
+    //       oneFullDate.getMonth() + 1
+    //     }/${oneFullDate.getFullYear()}`;
 
-        /*future temps*/
-        let oneTemp = weather.daily[1].temp.day;
-        let twoTemp = weather.daily[2].temp.day;
-        let threeTemp = weather.daily[3].temp.day;
+    //     let two = parseInt(`${weather.daily[2].dt}000`);
+    //     let twoFullDate = new Date(two);
 
-        
-        let currentConditions = document.createElement("div");
-        currentConditions.innerText = `Current: ${conDesc}, ${temp}\u00B0 F and ${humidity}% Humidity`;
-        
-        let oneWeather = document.createElement("div");
-        oneWeather.innerHTML = `<h4>${oneRefinedDate}</h4><p>${oneTemp}\u00B0 F</p>`;
-        let twoWeather = document.createElement("div");
-        twoWeather.innerHTML = `<h4>${twoRefinedDate}</h4><p>${twoTemp}\u00B0 F</p>`;
-        let threeWeather = document.createElement("div");
-        threeWeather.innerHTML = `<h4>${threeRefinedDate}</h4><p>${threeTemp}\u00B0 F</p>`;
+    //     let twoRefinedDate = `${twoFullDate.getDate()}/${
+    //       twoFullDate.getMonth() + 1
+    //     }/${twoFullDate.getFullYear()}`;
 
-        let forecast = document.createElement("div");
-        forecast.append(oneWeather,twoWeather,threeWeather,)
+    //     let three = parseInt(`${weather.daily[3].dt}000`);
+    //     let threeFullDate = new Date(three);
 
+    //     let threeRefinedDate = `${threeFullDate.getDate()}/${
+    //       threeFullDate.getMonth() + 1
+    //     }/${threeFullDate.getFullYear()}`;
 
-        weatherinfo.append(currentConditions,forecast);
-        weatherinfo.classList.add("weatherinfo")
-        forecast.classList.add("weatherForecast")
+    //     /*future temps*/
+    //     let oneTemp = weather.daily[1].temp.day;
+    //     let twoTemp = weather.daily[2].temp.day;
+    //     let threeTemp = weather.daily[3].temp.day;
 
+    //     let currentConditions = document.createElement("div");
+    //     currentConditions.innerText = `Current: ${conDesc}, ${temp}\u00B0 F and ${humidity}% Humidity`;
 
+    //     let oneWeather = document.createElement("div");
+    //     oneWeather.innerHTML = `<h4>${oneRefinedDate}</h4><p>${oneTemp}\u00B0 F</p>`;
+    //     let twoWeather = document.createElement("div");
+    //     twoWeather.innerHTML = `<h4>${twoRefinedDate}</h4><p>${twoTemp}\u00B0 F</p>`;
+    //     let threeWeather = document.createElement("div");
+    //     threeWeather.innerHTML = `<h4>${threeRefinedDate}</h4><p>${threeTemp}\u00B0 F</p>`;
 
+    //     let forecast = document.createElement("div");
+    //     forecast.append(oneWeather, twoWeather, threeWeather);
 
-        card.appendChild(weatherinfo);
-        templeparent.appendChild(card);
-        showSlides(slideIndex);
-      });
+    //     weatherinfo.append(currentConditions, forecast);
+    //     weatherinfo.classList.add("weatherinfo");
+    //     forecast.classList.add("weatherForecast");
 
+    //     card.appendChild(weatherinfo);
+    //     templeparent.appendChild(card);
+    //     showSlides(slideIndex);
+    //   });
+    templeparent.appendChild(card);
+    showSlides(slideIndex);
   });
-
 };
-
 
 fetch(requestURL)
   .then((response) => response.json())
@@ -110,27 +112,27 @@ fetch(requestURL)
     output(templeList);
   });
 
-
-
-
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   //console.log(`slides  -  ${slides[0]}`);
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
-  slides[slideIndex-1].style.display = "flex";
+  slides[slideIndex - 1].style.display = "flex";
 }
-
 
 /*
 
