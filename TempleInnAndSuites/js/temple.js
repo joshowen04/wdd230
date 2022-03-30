@@ -11,9 +11,13 @@ const output = (temples) => {
     card.classList.add("mySlides");
     card.classList.add("fade");
     let templeName = document.createElement("h3");
-
+    //let link = temples.link;
     templeName.innerText = temples.templeName;
+    console.log(temples.templeName);
     templeName.classList.add("text");
+    
+    
+    
     card.appendChild(templeName);
 
 //    let location = document.createElement("h4");
