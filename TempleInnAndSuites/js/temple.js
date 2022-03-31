@@ -19,16 +19,53 @@ const output = (temples) => {
 
     card.appendChild(templeName);
 
-    //    let location = document.createElement("h4");
-    //    location.innerText = temples.location;
-    // let dedicated = document.createElement("h4");
-    // dedicated.innerText = temples.dedicated;
-    // card.appendChild(dedicated);
+
     let imageUrl = document.createElement("img");
     imageUrl.src = temples.imageUrl;
     imageUrl.alt = temples.templeName;
     card.appendChild(imageUrl);
-    //card.appendChild(location);
+
+
+
+    let location = document.createElement("h4");
+    location.innerText = `Located in: ${temples.address}`;
+    card.appendChild(location);
+
+    let number = document.createElement("h4");
+    number.innerText = `Phone Number: ${temples.number}`;
+    card.appendChild(number);
+
+    let ordinance = document.createElement("h4");
+    ordinance.innerHTML = `Link to External Site to Schedule Ordinances: <a href=${temples.ordinance}>Here</a>`;
+    card.appendChild(ordinance);
+
+    let dedicated = document.createElement("h4");
+    dedicated.innerText = `Dedicated: ${temples.dedicated}`;
+    card.appendChild(dedicated);
+    
+    let services = document.createElement("div");
+    services.classList.add("servicesDiv");
+    let availableServices = temples.services;
+    let servicesText = "<h4>Available Services:</h4>";
+    availableServices = availableServices.split(" / ");
+    for (let i = 0; i < availableServices.length; i++) { 
+      servicesText += `<p>${availableServices[i]}</p>`;
+    
+    }
+    services.innerHTML = servicesText;
+    card.appendChild(services);
+
+    let closures = document.createElement("div");
+    closures.classList.add("closuresDiv");
+    let currentClosures = temples.closure;
+    let closuresText = "<h4>Closures 2022:</h4>";
+    currentClosures = currentClosures.split(" / ");
+    for (let i = 0; i < currentClosures.length; i++) { 
+      closuresText += `<p>${currentClosures[i]}</p>`;
+    
+    }
+    closures.innerHTML = closuresText;
+    card.appendChild(closures);
     let lat = temples.lat;
     let lon = temples.lon;
     // fetch(

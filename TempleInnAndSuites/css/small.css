@@ -306,3 +306,12 @@ footer{
 .contactUsDiv p, .directionDiv p{
   margin:0;
 }
+
+.templeCards h4 {
+  margin:.25em;
+}
+
+.servicesDiv p, .servicesDiv h4, .closuresDiv p, .closuresDiv h4{
+  margin:.25em;
+}
+
