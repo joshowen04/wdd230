@@ -21,7 +21,7 @@
     <!--javascript-->
     <script defer src="../js/assignActive.js"></script>
     <script defer src="../js/scripts.js"></script>
-
+    <script defer src="../js/dates.js"></script>
 </head>
 
 <body>
@@ -35,26 +35,125 @@
                 <ul id="primaryNav">
                     <li id="index"><a href="../index.html">Home</a></li>
                     <li id="reservation"><a href="../reservation/reservation.html">Reservation</a></li>
-                    <li id="services"><a href="services/services.html">Services</a></li>
+                    <li id="services"><a href="services.html">Services</a></li>
                     <li id="temple"><a href="../temple/temple.html">Temple</a></li>
                 </ul>
             </nav>
         </div>
         <div id="socialDiv">
-            <a href="https://www.facebook.com/"><img class="socialicon" id="headerFbook"
-                    src="../images/fbook.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com"><img class="socialicon"
-                    id="headerLinkedin" src="../images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/"><img class="socialicon" id="headerFbook" src="../images/fbook.png"
+                    alt="Facebook"></a>
+            <a href="https://www.linkedin.com"><img class="socialicon" id="headerLinkedin" src="../images/linkedin.png"
+                    alt="LinkedIn"></a>
         </div>
         <div id="headingDiv">
             <h1>Temple Inn and Suites</h1>
         </div>
-        <div id="dateDiv">
-            <p id="currentDate">Current Date</p>
+        <div class="dateDiv">
+            <p class="currentDate"></p>
         </div>
     </header>
-    <main>
-    
+    <main id="servicesMain">
+        <section id="otherServices">
+            <div id="otherServicesText">
+                <h2>Services Included for Your Stay</h2>
+            </div>
+            <div id="otherServicesImages">
+                <figure>
+                    <img src="../images/rsz_wificlipart.png" alt="Wifi img">
+                    <figcaption>Free Wifi</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/rsz_1shuttle.png" alt="Shuttle img">
+                    <figcaption>Temple Shuttle</figcaption>
+
+                </figure>
+                <figure>
+                    <img src="../images/rsz_breakfastclipart.png" alt="breakfast img">
+                    <figcaption>Free Breakfast</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/rsz_gymclipart.png" alt="gym img">
+                    <figcaption>24/7 Gym Access</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/rsz_parkingclipart.png" alt="parking img">
+                    <figcaption>Free Parking</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/rsz_poolclipart.png" alt="pool img">
+                    <figcaption>Seasonal Pool</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="specializedServices">
+            <h2>Specialized Services</h2>
+            <ul>
+                <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and
+                    need to change to and from church clothes</li>
+                <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                <li>Temple history themed reception and sitting area</li>
+                <li>A wedding reception hall that can be easily customized with a simple catering menu and kitchen
+                    access for food preparation and serving</li>
+                <li>A family search center that supports family search and ordinance work</li>
+            </ul>
+        </section>
+        
+        <section id="weddingServices">
+            <div id="weddingText">
+                <h2>Our Wedding Reception Packages Could Include:</h2>
+                <ul>
+                    <li>Large rooms with room for seating up to 50 people, depending on location.</li>
+                    <li>Food Service/ Catering available</li>
+                    <li>Set-Up and Event Planning</li>
+                    <li>Stage and AV equipment available.</li>
+                    <li>Packages for all budgets.</li>
+                    <li>Clean up included for free in all packages.</li>
+                </ul>
+            </div>
+            <div id="weddingImage">
+                <img src="../images/pexels-gillian-harrison-800.jpg"
+                    alt="Wedding Reception Photo by Gillian Harrison: https://www.pexels.com/photo/a-fine-dining-table-4668573/"
+                    sizes="90vw" srcset="../images/pexels-gillian-harrison-200.jpg 200w,
+                        ../images/pexels-gillian-harrison-600.jpg 600w,
+                        
+                            ">
+                <!-- ../images/pexels-gillian-harrison-800.jpg 800w -->
+            </div>
+        </section>
+
+        <section id="fullTimeServices">
+            <div id="fullTimeText">
+                <h2>Special Accommodations Tailored for Full Time Missionaries:</h2>
+                <ul id="fullTimeUl">
+                    <li>Special monthly or yearly rates available.</li>
+                    <li>Suites include full kitchen and seating area for guests.</li>
+                    <li>Laundry services included free of charge for temple clothing.</li>
+                    <li>Cleaning services available.</li>
+                </ul>
+            </div>
+            <div id="fullTimeImages">
+                <picture>
+                    <img src="../images/pexels-dmitry-zvolskiy-800.jpg"
+                        alt="Photo by Anna Shvets: Photo by Dmitry Zvolskiy: https://www.pexels.com/photo/chopping-boards-near-oven-under-hood-2062426/"
+                        sizes="90vw" srcset="../images/pexels-dmitry-zvolskiy-200.jpg 200w,
+                            ../images/pexels-dmitry-zvolskiy-600.jpg 600w,
+                            ">
+                    <!-- ../images/pexels-dmitry-zvolskiy-800.jpg 800w -->
+                </picture>
+                <picture>
+                    <img id="fullTimeImageLiving" src="../images/pexels-rachel-claire-800.jpg"
+                        alt="Photo by Rachel Claire: https://www.pexels.com/photo/stylish-living-room-with-sofa-and-armchair-5490341/"
+                        sizes="90vw" srcset="../images/pexels-rachel-claire-200.jpg 200w,
+                            ../images/pexels-rachel-claire-600.jpg 600w,
+                            ">
+                    <!-- ../images/pexels-rachel-claire-800.jpg 800w -->
+                </picture>
+
+            </div>
+
+        </section>
     </main>
     <footer>
         <div>
@@ -70,13 +169,15 @@
             <p>Phone: 1 (240) 555 1234 </p>
             <p>Email: contact@templeinn.com</p>
         </div>
-        <div class="socialDiv" >
-            <a href="https://www.facebook.com/"><img class="footerFbook" src="../images/fbook.png"
-                    alt="Facebook"></a>
+        <div class="socialDiv">
+            <a href="https://www.facebook.com/"><img class="footerFbook" src="../images/fbook.png" alt="Facebook"></a>
             <a href="https://www.linkedin.com"><img class="footerLinkedin" src="../images/linkedin.png"
                     alt="LinkedIn"></a>
         </div>
-    
+        <div class="copywritebox">
+            <p class="copywriteyear">&copy; <span class="lastmod"></span></p>
+
+        </div>
     </footer>
 </body>
 

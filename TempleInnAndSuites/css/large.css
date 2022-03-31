@@ -63,4 +63,57 @@
   nav a {
     font-size: 1rem;
   }
+
+  #servicesMain section {
+    padding:10px;
+    display:grid;
+  
+  }
+  #weddingServices{
+    grid-template-columns: 1fr 1fr;
+  }
+  #weddingText{
+    grid-column: 1;
+
+  }
+  #weddingImage{
+    grid-column: 2;
+
+  }
+  #fullTimeServices{
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+
+  }
+  #fullTimeText{
+    text-align: center;
+    grid-row:1;
+    margin-right:5px;
+  }
+  #fullTimeUl {
+    list-style-type: none;
+
+  }
+  #fullTimeImages{
+    
+    grid-row:2;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #otherServicesImages {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+  }
+  #otherServicesImages img{
+    border-style: solid;
+    
+  }
+  figcaption {
+    text-align: center;
+  }
+
 }

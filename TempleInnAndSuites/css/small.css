@@ -13,10 +13,11 @@ h5 {
   font-family: "DM Serif Text", serif;
 }
 body {
-  font-family: "Arial", sans-serif;
+
   background-color: var(--accentColor1);
   max-width: 600px;
   margin: auto;
+  font-family: "Arial", sans-serif;
   color: var(--textDarkBlue);
 }
 header, footer{
@@ -107,6 +108,7 @@ header h1 {
     /*transition: 0.5s;*/
   }
 
+
 #currentDate {
   text-align: center;
   margin: 0;
@@ -129,11 +131,11 @@ nav a:hover, #hamburgerBtn:hover{
   background-color: var(--textDarkBlue);
   color: var(--backgroundYellow);
   font-weight: bold;
-  
+
 }
 #availableTemples img{
   max-width:100%;
-  
+
 }
 
 
@@ -164,6 +166,9 @@ nav a:hover, #hamburgerBtn:hover{
   /*display:flex;*/
   flex-direction: column;
   align-items: center;
+  box-shadow: 5px 5px var(--textLightBlue);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 
@@ -185,18 +190,20 @@ nav a:hover, #hamburgerBtn:hover{
 
 
 #navigationBar{
-  height:2em;
+  height:4em;
+  margin-top:10px;
+
   /*border-style: solid;*/
   /*width:350px;*/
 }
 .prev, .next {
   cursor: pointer;
   width: auto;
-  margin: 15px;
-  padding: 16px;
+  margin:10px;
+  padding: 10px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 3em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -227,13 +234,19 @@ nav a:hover, #hamburgerBtn:hover{
 }
 
 .weatherForecast{
-  margin-top:-10px;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding:0;
+
 }
-.weatherForecast h4{
-  margin-bottom:-10px;
+.weatherForecast div{
+  border-style:solid;
+  border-radius:2px;
+  margin:.5em;
+  box-shadow: 2px 2px var(--textLightBlue);
+}
+.weatherForecast h5{
+  margin-bottom:-5px;
 }
 
 
@@ -265,6 +278,7 @@ Button{
   border-width: 3px;
   border-color: var(--textDarkBlue);
   font-style: bold;
+
 }
 
 #reservationButton{
@@ -272,8 +286,9 @@ Button{
   bottom:10%;
   right: 20px;
 
-  
+
 }
+
 
 #services{
   margin:10px;
@@ -315,3 +330,103 @@ footer{
   margin:.25em;
 }
 
+#homeMain .tobehidden{
+  display:none;
+}
+
+.copywritebox{
+  text-align: center;
+}
+
+#servicesMain img, #reservationImage{
+  box-shadow: 5px 5px var(--textLightBlue);
+  margin:5px;
+  border-radius: 20px;
+  max-width:90%;
+}
+#servicesMain section {
+  padding:10px;
+  display:flex;
+  flex-direction: column;
+
+}
+figure {
+  display:flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+figure img{
+  max-width: 150px;
+}
+figcaption {
+  text-align: center;
+}
+#otherServicesText{
+  text-align: center;
+}
+
+
+/*--------------- FORM ----------------*/
+#reservationMain{
+  display: flex;
+  justify-content: center;
+  padding:0px;
+}
+
+form fieldset {
+  /*margin: 2rem 0;*/
+  border: 1px solid var(--textDarkBlue);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+
+  width:90vw;
+  max-width: 90%;
+  background-color: var(--backgroundYellow);
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--textDarkBlue);
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px var(--textDarkBlue);
+  border-radius: 4px;
+  padding: 0.75rem;
+  /*color: #555;*/
+  width: 90%;
+}
+form input.submitBtn {
+  border-style: solid;
+  border-color: var(--textDarkBlue);
+  background-color: var(--backgroundYellow);
+  color: var(--textDarkBlue);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  
+  margin: 1% 1% 2rem 1%;
+  width: 98%;
+  /*max-width: 20rem;*/
+}
+
+form label.top input:required {
+  background-color: var(--accentColor2);
+  /* border-bottom:red solid 6px;*/
+}
+form label.top input:required:valid {
+  background-color: white;
+  /* border-bottom:red solid 6px;*/
+}
+
+#thankyoumessage{
+  margin:10px;
+}

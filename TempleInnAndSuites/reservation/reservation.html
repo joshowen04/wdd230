@@ -21,6 +21,7 @@
     <!--javascript-->
     <script defer src="../js/assignActive.js"></script>
     <script defer src="../js/scripts.js"></script>
+    <script defer src="../js/dates.js"></script>
 
 </head>
 
@@ -34,7 +35,7 @@
                 <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                 <ul id="primaryNav">
                     <li id="index"><a href="../index.html">Home</a></li>
-                    <li id="reservation"><a href="reservation/reservation.html">Reservation</a></li>
+                    <li id="reservation"><a href="reservation.html">Reservation</a></li>
                     <li id="services"><a href="../services/services.html">Services</a></li>
                     <li id="temple"><a href="../temple/temple.html">Temple</a></li>
                 </ul>
@@ -49,12 +50,34 @@
         <div id="headingDiv">
             <h1>Temple Inn and Suites</h1>
         </div>
-        <div id="dateDiv">
-            <p id="currentDate">Current Date</p>
+        <div class="dateDiv">
+            <p class="currentDate"></p>
         </div>
     </header>
-    <main>
-    
+    <main id="reservationMain">
+        <form method="get" action="thankyou.html">
+            <h2>Make A Reservation!</h2>
+            <fieldset>
+                <label class="top">First Name* <input type="text" name="fname" required pattern="[A-Za-z]+"></label>
+                <label class="top">Last Name* <input type="text" name="lname" required pattern="[A-Za-z]+"></label>
+                <label class="top">Temple You'd Like to Visit <select id="templeSelect" name="templeSelect">
+                    <option value="Bountiful Utah Temple">Bountiful Utah Temple</option>
+                    <option value="London England Temple">London England Temple</option>
+                    <option value="Provo City Center Temple">Provo City Center Temple</option>
+                    <option value="Salt Lake Temple">Salt Lake Temple</option>
+                    <option value="Santiago Chile Temple">Santiago Chile Temple</option>
+                    <option value="St. Louis Missouri Temple">St. Louis Missouri Temple</option>
+                    <option value="Trujillo Peru Temple">Trujillo Peru Temple</option>
+                  </select></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Start Date* <input type="date" name="startdate" placeholder="dd-mm-yyyy" value="" min="2022-03-31" max="2030-12-31" required></label>
+                <label class="top">End Date <input type="date" name="enddate" placeholder="dd-mm-yyyy" value="" min="2022-03-31" max="2030-12-31" required ></label>
+                <input type="hidden" id="date" name="date">
+            </fieldset>
+            <input type="submit" value="Confirm Reservation" class="submitBtn">
+        </form>
+
     </main>
     <footer>
         <div>
@@ -76,7 +99,10 @@
             <a href="https://www.linkedin.com"><img class="footerLinkedin" src="../images/linkedin.png"
                     alt="LinkedIn"></a>
         </div>
-    
+        <div class="copywritebox">
+            <p class="copywriteyear">&copy; <span class="lastmod"></span></p>
+
+        </div>
     </footer>
 </body>
 

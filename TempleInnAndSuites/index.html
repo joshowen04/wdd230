@@ -23,6 +23,7 @@
     <script defer src="js/scripts.js"></script>
     <!-- <script defer src="js/weather.js"></script> -->
     <script defer src="js/temple.js"></script>
+    <script defer src="js/dates.js"></script>
 
 </head>
 
@@ -51,8 +52,8 @@
         <div id="headingDiv">
             <h1>Temple Inn and Suites</h1>
         </div>
-        <div id="dateDiv">
-            <p id="currentDate">Current Date</p>
+        <div class="dateDiv">
+            <p class="currentDate"></p>
         </div>
     </header>
     <main id="homeMain">
@@ -64,12 +65,14 @@
         </section>
         <section id="reservation">
             <h2 id="reservationHeader">Make a Reservation Today!</h2>
-            <img id="reservationImage" src="pexels-andrea-piacquadio-large.jpg"
+            <picture>
+            <img id="reservationImage" src="images/pexels-andrea-piacquadio-large.jpg"
                 alt="Photo by Andrea Piacquadio: https://www.pexels.com/photo/reception-desk-with-antique-hotel-bell-small.jpg/"
                 sizes="100vw" srcset="images/pexels-andrea-piacquadio-small.jpg 200w,
                     images/pexels-andrea-piacquadio-medium.jpg 600w,
                     images/pexels-andrea-piacquadio-large.jpg 800w
                     ">
+                </picture>
             <button id="reservationButton">Make your Reservation</button>
         </section>
         <section id="availableTemples">
@@ -106,7 +109,10 @@
             <a href="https://www.linkedin.com"><img class="footerLinkedin" src="images/linkedin.png"
                     alt="LinkedIn"></a>
         </div>
+        <div class="copywritebox">
+            <p class="copywriteyear">&copy; <span class="lastmod"></span></p>
 
+        </div>
     </footer>
 
 

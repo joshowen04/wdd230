@@ -27,5 +27,12 @@ footer .socialDiv{
     display:flex;
     flex-direction: column;
 }
+.copywritebox{
+  text-align: center;
+  grid-column:1/5;
+}
+#reservationMain input.submitBtn {
 
+  width:600px;
+}
 }
