@@ -14,7 +14,7 @@ const output = (temples) => {
     let templeName = document.createElement("h3");
     //let link = temples.link;
     templeName.innerText = temples.templeName;
-    console.log(temples.templeName);
+    //console.log(temples.templeName);
     templeName.classList.add("text");
 
     card.appendChild(templeName);
@@ -83,7 +83,7 @@ const output = (temples) => {
         if (alerts) {
           alert(`${alerts.event} advisory for ${temples.location}\n${alerts.description} `);
         }
-        console.log(weather);
+        //console.log(weather);
         let weatherinfo = document.createElement("div");
 
         /* Current Temp */
