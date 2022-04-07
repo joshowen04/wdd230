@@ -277,7 +277,7 @@ Button{
   border-radius: 30px;
   border-width: 3px;
   border-color: var(--textDarkBlue);
-  font-style: bold;
+  font-weight: bold;
 
 }
 
